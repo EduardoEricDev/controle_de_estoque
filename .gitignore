@@ -24,3 +24,7 @@ Thumbs.db
 # Yarn especifico
 .yarn/
 yarn-error.log
+
+# Banco de dados
+*.db
+*.db-journal
