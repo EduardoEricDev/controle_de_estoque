@@ -1,4 +1,5 @@
 import { Router, Request, Response } from "express";
+import { CreateUserController } from "./controllers/user/CreateUserController";
 
 const router = Router();
 
@@ -12,5 +13,8 @@ const router = Router();
 //   // Simulando um erro que aconteceria, por exemplo, se um produto não fosse encontrado
 //   throw new Error("Este é um erro de teste capturado pelo middleware!");
 // });
+
+//Rotas de usuário
+router.post("/user/create", new CreateUserController().handle);
 
 export { router };
